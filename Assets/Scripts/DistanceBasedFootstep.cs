@@ -44,7 +44,7 @@ public class DistanceBasedFootstep : MonoBehaviour
         Vector3 rayOrigin = footOrigin.position + Vector3.up * 0f;
         if (Physics.Raycast(rayOrigin, Vector3.down, out RaycastHit hit, raycastDistance, surfaceLayer))
         {
-            Debug.LogWarning("Footstep triggered");
+            //Debug.LogWarning("Footstep triggered");
             SurfaceAudioProfile surface = hit.collider.GetComponent<SurfaceAudioProfile>();
 
             if (surface != null && surface.RandomContainer != null)
