@@ -3887,6 +3887,10 @@ PrefabInstance:
       propertyPath: _iModifyDataFromSourceMono
       value: 
       objectReference: {fileID: 998793085}
+    - target: {fileID: 5102351109809397120, guid: b95fb12b2a4cf63439fcd2786e16cc2f, type: 3}
+      propertyPath: _maxRayVisualLength
+      value: 2.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6404908730567649822, guid: b95fb12b2a4cf63439fcd2786e16cc2f, type: 3}
       propertyPath: _hmd
       value: 
@@ -4591,6 +4595,10 @@ PrefabInstance:
       propertyPath: _iModifyDataFromSourceMono
       value: 
       objectReference: {fileID: 998793087}
+    - target: {fileID: 5102351109809397120, guid: b95fb12b2a4cf63439fcd2786e16cc2f, type: 3}
+      propertyPath: _maxRayVisualLength
+      value: 2.35
+      objectReference: {fileID: 0}
     - target: {fileID: 5272681974122636239, guid: b95fb12b2a4cf63439fcd2786e16cc2f, type: 3}
       propertyPath: m_IsActive
       value: 0
