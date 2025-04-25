@@ -17896,7 +17896,7 @@ MonoBehaviour:
   raycastDistance: 1.5
   surfaceLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 2
   footOrigin: {fileID: 1677372415}
 --- !u!114 &1677372417
 MonoBehaviour:
