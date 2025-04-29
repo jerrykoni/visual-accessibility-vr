@@ -29,9 +29,6 @@ public class FrustumAudioTrigger : MonoBehaviour
     private float checkInterval = 0.1f;
 
     [Header("Audio Settings")]
-    [SerializeField, Min(0.01f)]
-    private float volumeMultiplierFactor = 1.0f;
-
     [SerializeField, Range(1f, 10f)]
     private float logarithmicFalloff = 2.0f;
 

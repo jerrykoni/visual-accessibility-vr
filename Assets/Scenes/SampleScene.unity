@@ -1077,6 +1077,7 @@ GameObject:
   - component: {fileID: 65666119}
   - component: {fileID: 65666118}
   - component: {fileID: 65666117}
+  - component: {fileID: 65666121}
   m_Layer: 1
   m_Name: Floor
   m_TagString: Untagged
@@ -1173,6 +1174,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 911378760}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &65666121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65666116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45ed9406e6619c429e80c5842b455bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomContainer: {fileID: 6418180475301049370, guid: 69fee53b2fbe8c049a041b0c4e8c2311, type: 2}
 --- !u!1 &80750011
 GameObject:
   m_ObjectHideFlags: 0
@@ -14040,9 +14054,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1047252788}
   - {fileID: 65666120}
   - {fileID: 537867626}
-  - {fileID: 1047252788}
   - {fileID: 347234421}
   - {fileID: 509872991}
   - {fileID: 655400408}
@@ -14467,7 +14481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.5
+      value: 61.7
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15417,6 +15431,7 @@ GameObject:
   - component: {fileID: 1047252787}
   - component: {fileID: 1047252786}
   - component: {fileID: 1047252785}
+  - component: {fileID: 1047252789}
   m_Layer: 1
   m_Name: Entrance
   m_TagString: Untagged
@@ -15513,6 +15528,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 911378760}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1047252789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047252784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45ed9406e6619c429e80c5842b455bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomContainer: {fileID: 6418180475301049370, guid: 69fee53b2fbe8c049a041b0c4e8c2311, type: 2}
 --- !u!1 &1051804219
 GameObject:
   m_ObjectHideFlags: 0
@@ -23207,6 +23235,7 @@ GameObject:
   - component: {fileID: 1677372415}
   - component: {fileID: 1677372418}
   - component: {fileID: 1677372417}
+  - component: {fileID: 1677372419}
   - component: {fileID: 1677372416}
   m_Layer: 0
   m_Name: FootstepAudio
@@ -23273,7 +23302,7 @@ AudioSource:
   m_GameObject: {fileID: 1677372414}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d3053167faff6424eb6f7c5379ad9653, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -23361,6 +23390,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1677372419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677372414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3115f71c5841078600752259d33fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockPositionToListener: 1
+  width: 8
+  height: 3
+  depth: 5
+  leftMaterial: 18
+  rightMaterial: 18
+  ceilingMaterial: 0
+  floorMaterial: 4
+  frontMaterial: 18
+  backMaterial: 18
+  clutterFactor: 0.5
 --- !u!1 &1680089095
 GameObject:
   m_ObjectHideFlags: 0
@@ -35495,6 +35547,7 @@ SceneRoots:
   - {fileID: 656282838}
   - {fileID: 1549700145}
   - {fileID: 1576105768}
+  - {fileID: 911378760}
   - {fileID: 1571528623}
   - {fileID: 438847274755216403}
   - {fileID: 685067751}
@@ -35509,4 +35562,3 @@ SceneRoots:
   - {fileID: 1169408497}
   - {fileID: 456278120}
   - {fileID: 1378740748}
-  - {fileID: 911378760}
