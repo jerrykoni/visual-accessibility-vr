@@ -5,6 +5,23 @@ TagManager:
   serializedVersion: 3
   tags:
   - Interactable
+  - QDSUISharedThemeColor
+  - QDSUIBorderlessButton
+  - QDSUIIcon
+  - QDSUIToggleButton
+  - QDSUITextSecondaryColor
+  - QDSUITooltip
+  - QDSUIBackplateGradient
+  - QDSUIToggleBorderlessButton
+  - QDSUISection
+  - QDSUISecondaryButton
+  - QDSUIAccentColor
+  - QDSUIToggleSwitch
+  - QDSUIDestructiveButton
+  - QDSUIPrimaryButton
+  - QDSUITextInvertedColor
+  - QDSUITextSecondaryInvertedColor
+  - Audio
   layers:
   - Default
   - TransparentFX

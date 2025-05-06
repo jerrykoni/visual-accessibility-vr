@@ -29,6 +29,8 @@ public class CapsuleAudioTrigger : MonoBehaviour
     // A rough measure of the maximum distance from the capsule's center (or bounds) to its outer edge.
     private float maxDistance;
 
+    private int zeroVolumeCount = 0; // Counter for frames where the volume is effectively zero.
+
     // Keep track of valid colliders currently in the trigger.
     private HashSet<Collider> validColliders = new HashSet<Collider>();
 
@@ -108,32 +110,60 @@ public class CapsuleAudioTrigger : MonoBehaviour
                 }
             }
             targetVolume = highestVolume;
+            zeroVolumeCount = 0; // Reset the zero volume count if we have valid colliders.
         }
         else
         {
             targetVolume = 0f;
+            if (audioSource.isPlaying)
+            {
+                zeroVolumeCount++;
+            }
         }
+
+        //Debug.LogWarning("No valid colliders detected. Zero volume count: " + zeroVolumeCount);
+        //Debug.LogWarning("Audio Source is playing: " + audioSource.isPlaying);
 
         // Smoothly fade the audio volume towards the target volume.
         audioSource.volume = Mathf.Lerp(audioSource.volume, targetVolume, fadeSpeed * Time.deltaTime);
 
         // If the faded volume is very small, snap it to 0 to avoid minute fluctuations.
-        if (audioSource.volume < 0.01f)
+        if (audioSource.volume < 0.0001f)
         {
             audioSource.volume = 0f;
         }
 
-        // Start playback if valid objects exist and the audio is not already playing.
         if (validColliders.Count > 0 && !audioSource.isPlaying)
         {
             audioSource.Play();
         }
 
-        // Stop the audio if no valid objects remain and the volume is essentially 0.
-        if (validColliders.Count == 0 && audioSource.isPlaying && audioSource.volume < 0.01f)
+        if (zeroVolumeCount > 20)
         {
-            audioSource.Stop();
+            // If no valid colliders are present for two consecutive frames, stop the audio.
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+                zeroVolumeCount = 0; // Reset the counter to avoid immediate stopping.
+            }
         }
+        // If the faded volume is very small, snap it to 0 to avoid minute fluctuations.
+        //if (audioSource.volume < 0.01f)
+        //{
+        //    audioSource.volume = 0f;
+        //}
+
+        // Start playback if valid objects exist and the audio is not already playing.
+        //if (validColliders.Count > 0 && !audioSource.isPlaying)
+        //{
+        //    audioSource.Play();
+        //}
+
+        // Stop the audio if no valid objects remain and the volume is essentially 0.
+        //if (validColliders.Count == 0 && audioSource.isPlaying && audioSource.volume < 0.01f)
+        //{
+        //    audioSource.Stop();
+        //}
     }
 
     // Visualization using Gizmos to show where the reference point is.
