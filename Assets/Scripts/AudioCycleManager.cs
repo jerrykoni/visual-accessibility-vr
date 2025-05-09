@@ -38,6 +38,14 @@ public class AudioCycleManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (OVRInput.GetDown(OVRInput.Button.One))
+        {
+            CycleAudioSource();
+        }
+    }
+
     /// <summary>
     /// Called from an external script (e.g., on a button press) to cycle through AudioSources.
     /// Only AudioSources with the specified tag (targetAudioTag) and within the collider's bounds are considered.
