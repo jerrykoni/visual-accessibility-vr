@@ -20,26 +20,6 @@ AudioContainerElement:
   m_AudioClip: {fileID: 8300000, guid: 6fa9a250bffc6454a840a823ac5ae71d, type: 3}
   m_Volume: 0
   m_Enabled: 1
---- !u!1233149941 &-7209735000323977189
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Footsteps_Sand_Walk_02_{-7209735000323977189}
-  m_AudioClip: {fileID: 8300000, guid: 93b5a4dc803c25c48a325a38b5617c33, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &-5353578582690976750
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Footsteps_Sand_Walk_01_{-5353578582690976750}
-  m_AudioClip: {fileID: 8300000, guid: 557e96b16076cb84285c90941906b44c, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
 --- !u!1233149941 &-1400453553553635812
 AudioContainerElement:
   m_ObjectHideFlags: 1
@@ -87,7 +67,7 @@ AudioRandomContainer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FootstepsCarpet
-  m_Volume: -10
+  m_Volume: 0
   m_Pitch: -200
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
@@ -96,8 +76,6 @@ AudioRandomContainer:
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
-  - {fileID: -5353578582690976750}
-  - {fileID: -7209735000323977189}
   - {fileID: -7438225011917980130}
   - {fileID: -7228565521817600157}
   - {fileID: 2319989023615645550}
@@ -111,7 +89,7 @@ AudioRandomContainer:
   m_TriggerMode: 0
   m_AutomaticTriggerMode: 1
   m_LoopMode: 2
-  m_VolumeRandomizationEnabled: 1
+  m_VolumeRandomizationEnabled: 0
   m_PitchRandomizationEnabled: 1
   m_AutomaticTriggerTimeRandomizationEnabled: 0
   m_LoopCountRandomizationEnabled: 0

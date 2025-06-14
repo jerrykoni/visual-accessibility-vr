@@ -87,7 +87,7 @@ AudioRandomContainer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FootstepsFloor
-  m_Volume: -10
+  m_Volume: 0
   m_Pitch: -200
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
@@ -110,7 +110,7 @@ AudioRandomContainer:
   m_TriggerMode: 0
   m_AutomaticTriggerMode: 1
   m_LoopMode: 2
-  m_VolumeRandomizationEnabled: 1
+  m_VolumeRandomizationEnabled: 0
   m_PitchRandomizationEnabled: 1
   m_AutomaticTriggerTimeRandomizationEnabled: 0
   m_LoopCountRandomizationEnabled: 0

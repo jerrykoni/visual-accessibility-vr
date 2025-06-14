@@ -1,15 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1233149941 &-8780340268118591391
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Footsteps_Tile_Walk_03_{-8780340268118591391}
-  m_AudioClip: {fileID: 8300000, guid: 0909de896e9029541b92ae05fe15e4b6, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
 --- !u!1233149941 &-3774353657971386254
 AudioContainerElement:
   m_ObjectHideFlags: 1
@@ -28,16 +18,6 @@ AudioContainerElement:
   m_PrefabAsset: {fileID: 0}
   m_Name: Footsteps_Tile_Walk_07_{-1615186712135221864}
   m_AudioClip: {fileID: 8300000, guid: b995bc1775ea83b4b8f861763e9a1424, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
---- !u!1233149941 &1614885491368405167
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Footsteps_Tile_Walk_01_{1614885491368405167}
-  m_AudioClip: {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1233149941 &4663624146684032145
@@ -67,18 +47,15 @@ AudioRandomContainer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FootstepsConcrete
-  m_Volume: -6
+  m_Volume: 0
   m_Pitch: -200
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
-  m_VolumeRandomizationRange: {x: -2, y: 2}
+  m_VolumeRandomizationRange: {x: 0, y: 0}
   m_PitchRandomizationRange: {x: -500, y: 500}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
-  - {fileID: 1614885491368405167}
-  - {fileID: 6954990953380220711}
-  - {fileID: -8780340268118591391}
   - {fileID: 4663624146684032145}
   - {fileID: 4940705402423436377}
   - {fileID: -3774353657971386254}
@@ -93,16 +70,6 @@ AudioRandomContainer:
   m_PitchRandomizationEnabled: 1
   m_AutomaticTriggerTimeRandomizationEnabled: 0
   m_LoopCountRandomizationEnabled: 0
---- !u!1233149941 &6954990953380220711
-AudioContainerElement:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Footsteps_Tile_Walk_02_{6954990953380220711}
-  m_AudioClip: {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
-  m_Volume: 0
-  m_Enabled: 1
 --- !u!1233149941 &7809231095199285138
 AudioContainerElement:
   m_ObjectHideFlags: 1
